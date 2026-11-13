@@ -54,12 +54,13 @@ def evaluate_model_on_rag_dataset(
         if live_llm:
             try:
                 from langchain_core.messages import HumanMessage
+                joined_contexts = "\n---\n".join(contexts)
                 prompt = f"""You are the ALAS Jurist RAG Agent.
 Answer this legal question strictly and faithfully based on the provided document contexts.
 If the answer cannot be deduced from the context, state that clearly.
 
 Contexts:
-{"---\n".join(contexts)}
+{joined_contexts}
 
 Question: {question}
 
@@ -157,4 +158,3 @@ def run_rag_evaluation(live: bool = False) -> Dict[str, Any]:
 if __name__ == "__main__":
     is_live = "--live" in sys.argv
     run_rag_evaluation(live=is_live)
-

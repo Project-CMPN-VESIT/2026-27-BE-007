@@ -18,12 +18,16 @@ import sys
 import json
 import time
 import argparse
+from typing import Optional
 from datetime import datetime
 from pathlib import Path
 
 # Add project root to sys.path
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
+
+from dotenv import load_dotenv
+load_dotenv()
 
 from evaluation.runners.eval_clause_extraction import run_clause_evaluation
 from evaluation.runners.eval_case_classification import run_case_classification_evaluation
@@ -93,8 +97,8 @@ def run_full_suite(live: bool = False, output_file: Optional[str] = None) -> dic
         json.dump(results, f, indent=2)
 
     print("\n" + "=" * 90)
-    print(f"✓ EVALUATION SUITE COMPLETED IN {round(total_duration, 2)} SECONDS")
-    print(f"✓ MASTER RESULTS PERSISTED TO: {out_path.resolve()}")
+    print(f"[OK] EVALUATION SUITE COMPLETED IN {round(total_duration, 2)} SECONDS")
+    print(f"[OK] MASTER RESULTS PERSISTED TO: {out_path.resolve()}")
     print("=" * 90 + "\n")
 
     return results
@@ -125,4 +129,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

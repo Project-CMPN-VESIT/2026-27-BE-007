@@ -92,6 +92,14 @@ def get_resilient_llm(
     )
 
 
+def get_specialist_model(temperature: float = 0.0):
+    return get_resilient_llm(SPECIALIST_MODEL_NAME, temperature=temperature)
+
+
+def get_orchestrator_model(temperature: float = 0.0):
+    return get_resilient_llm(ORCHESTRATOR_MODEL_NAME, temperature=temperature)
+
+
 def execute_with_exponential_backoff(
     func: Callable[..., T],
     *args: Any,

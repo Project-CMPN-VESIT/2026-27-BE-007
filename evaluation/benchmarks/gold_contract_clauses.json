@@ -1,134 +1,596 @@
 [
   {
-    "id": "clause_01",
+    "id": "real_cuad_01",
     "gold_clause_type": "Limitation of Liability",
-    "text": "IN NO EVENT SHALL EITHER PARTY BE LIABLE TO THE OTHER FOR ANY INDIRECT, INCIDENTAL, SPECIAL, PUNITIVE, EXEMPLARY, OR CONSEQUENTIAL DAMAGES, OR FOR ANY LOSS OF PROFITS, DATA, BUSINESS OPPORTUNITY, OR GOODWILL, ARISING OUT OF OR IN CONNECTION WITH THIS AGREEMENT, REGARDLESS OF THE THEORY OF LIABILITY (WHETHER IN CONTRACT, TORT, STRICT LIABILITY, OR OTHERWISE), EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. EACH PARTY'S AGGREGATE LIABILITY UNDER THIS AGREEMENT SHALL BE LIMITED TO THE TOTAL FEES PAID OR PAYABLE BY CUSTOMER IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM.",
-    "contract_type": "Master Services Agreement"
+    "text": "Subject to Clauses 9.1 and 9.2, each party's total liability under or in connection with this Agreement (whether in contract, tort or  otherwise) arising in any Contract Year is limited to the greater of:\n\n  (a) [ * ] Euros ([ * ] Euros); and\n\n  (b) [ * ]% of the total payment due to the Distributor in the relevant Contract Year pursuant to Clause 4 (Payment Terms).",
+    "source": "CUAD (Uncapped Liability)"
   },
   {
-    "id": "clause_02",
+    "id": "real_cuad_02",
+    "gold_clause_type": "Limitation of Liability",
+    "text": "(c) breach of any implied condition as to title or quiet enjoyment; and\n\n  (d) misuse of confidential information.",
+    "source": "CUAD (Uncapped Liability)"
+  },
+  {
+    "id": "real_cuad_03",
+    "gold_clause_type": "Limitation of Liability",
+    "text": "Nothing in this Agreement shall exclude or limit either party's liability for:\n\n  (a) death or personal injury resulting from the negligence of either party or their servants, agents or employees;\n\n  (b) fraud or fraudulent misrepresentation;",
+    "source": "CUAD (Uncapped Liability)"
+  },
+  {
+    "id": "real_cuad_04",
+    "gold_clause_type": "Limitation of Liability",
+    "text": "Subject to Clauses 9.1 and 9.2, neither party shall be liable under this Agreement (whether in contract, tort or otherwise) for any:\n\n  (a) loss of anticipated savings;\n\n  (b) loss of business opportunity (which for the avoidance of doubt shall not include loss of advertising revenue);\n\n  (c) loss of or corruption of data;\n\n  (d) loss or damage resulting from third party claims; or\n\n  (e) indirect or consequential losses;\n     suffered or incurred by the other party (whether or not such losses were within the contemplation of the parties at the date of this  Agreement).",
+    "source": "CUAD (Uncapped Liability)"
+  },
+  {
+    "id": "real_cuad_05",
+    "gold_clause_type": "Limitation of Liability",
+    "text": "Nothing in this Agreement shall exclude or limit either party's liability under Clause 10 (Indemnities), or Distributor's liability under Clause  2 (License Grants and Restrictions), Clause 3.5 (Exclusivity), Clause 3.6 (End User License Agreement) and Clause 3.7 (Accurate  Reproduction) or Clause [ * ].",
+    "source": "CUAD (Uncapped Liability)"
+  },
+  {
+    "id": "real_cuad_06",
     "gold_clause_type": "Indemnification",
-    "text": "Vendor agrees to defend, indemnify, and hold harmless Customer, its affiliates, directors, officers, employees, and agents from and against any and all claims, suits, actions, demands, liabilities, damages, losses, costs, and expenses (including reasonable attorneys' fees) arising out of or resulting from: (a) any breach of Vendor's representations or warranties herein; (b) any claim that the Deliverables or Services infringe or misappropriate any patent, copyright, trademark, trade secret, or other proprietary right of any third party; or (c) gross negligence or willful misconduct of Vendor or its personnel.",
-    "contract_type": "Software Development Agreement"
+    "text": "BORROWER HEREBY AGREES TO DEFEND, INDEMNIFY AND HOLD HARMLESS INDEMNITEES FOR, FROM AND AGAINST ANY AND ALL LOSSES, DAMAGES, LIABILITIES, CLAIMS, ACTIONS, JUDGMENTS, COURT COSTS AND LEGAL OR OTHER EXPENSES (INCLUDING, WITHOUT LIMITATION, REASONABLE ATTORNEYS' FEES AND EXPENSES) WHICH ANY INDEMNITEE MAY INCUR AS A DIRECT OR INDIRECT CONSEQUENCE OF: (A) THE PURPOSE TO WHICH BORROWER APPLIES THE LOAN PROCEEDS; (B) THE FAILURE OF BORROWER TO PERFORM ANY OBLIGATIONS AS AND WHEN REQUIRED BY THIS AGREEMENT OR ANY OF THE OTHER LOAN DOCUMENTS; (C) ANY FAILURE AT ANY TIME OF ANY OF BORROWER'S REPRESENTATIONS OR WARRANTIES TO BE TRUE AND CORRECT; (D) ANY ACT OR OMISSION BY BORROWER, CONSTITUENT PARTNER OR MEMBER OF BORROWER WITH RESPECT TO ANY OF THE PROPERTY OR IMPROVEMENTS; OR (E) ANY ACTION OR OMISSION OF ANY INDEMNITEE IN CONNECTION WITH THE ENFORCEMENT OF ANY OF ITS RIGHTS UNDER THE LOAN DOCUMENTS OR THE OTHER RELATED DOCUMENTS EXCEPT TO THE EXTENT ARISING FORM THE GROSS NEGLIGENCE OR WILLFUL MISCONDUCT OF ANY INDEMNITEE. BORROWER SHALL PROMPTLY PAY TO INDEMNITEES UPON DEMAND ANY AMOUNTS OWING UNDER THIS INDEMNITY, TOGETHER WITH INTEREST FROM THE DATE SUCH OBLIGATION ARISES UNTIL PAID AT THE RATE OF INTEREST APPLICABLE TO THE PRINCIPAL BALANCE OF THE NOTE. BORROWER'S DUTY AND OBLIGATION TO DEFEND, INDEMNIFY AND HOLD HARMLESS INDEMNITEES SHALL SURVIVE CANCELLATION OF THE NOTE AND THE RECONVEYANCE, RELEASE OR SATISFACTION OR PARTIAL RECONVEYANCE, RELEASE OR SATISFACTION OF THE SECURITY INSTRUMENT OR OTHER LOAN DOCUMENTS.",
+    "source": "LEDGAR (SEC EDGAR - Indemnity)"
   },
   {
-    "id": "clause_03",
+    "id": "real_cuad_07",
+    "gold_clause_type": "Indemnification",
+    "text": "EACH DEBTOR HEREBY AGREES TO INDEMNIFY COLLATERAL AGENT AND ITS SUCCESSORS, ASSIGNS, AGENTS, ATTORNEYS, AND EMPLOYEES, FROM AND AGAINST ANY AND ALL LIABILITIES, DAMAGES, PENALTIES, SUITS, COSTS, AND EXPENSES OF ANY KIND AND NATURE (INCLUDING, WITHOUT LIMITATION, ALL EXPENSES OF LITIGATION OR PREPARATION THEREFOR WHETHER OR NOT COLLATERAL AGENT IS A PARTY THERETO) IMPOSED ON, INCURRED BY OR ASSERTED AGAINST COLLATERAL AGENT OR ITS SUCCESSORS, ASSIGNS, AGENTS, ATTORNEYS, AND EMPLOYEES, IN ANY WAY RELATING TO OR ARISING OUT OF THIS SECURITY AGREEMENT, OR THE MANUFACTURE, PURCHASE, ACCEPTANCE, REJECTION, OWNERSHIP, DELIVERY, LEASE, POSSESSION, USE, OPERATION, CONDITION, SALE, RETURN OR OTHER DISPOSITION OF ANY COLLATERAL (INCLUDING, WITHOUT LIMITATION, LATENT AND OTHER DEFECTS, WHETHER OR NOT DISCOVERABLE BY THE Collateral Agent OR SUCH DEBTOR, AND ANY CLAIM FOR INTELLECTUAL PROPERTY INFRINGEMENT).",
+    "source": "LEDGAR (SEC EDGAR - Indemnity)"
+  },
+  {
+    "id": "real_cuad_08",
+    "gold_clause_type": "Indemnification",
+    "text": "Without limiting, and in addition to, the provisions of Section\u00a010.02 , the Seller agrees to indemnify the Buyer and to hold the Buyer harmless from any loss or expense that the Buyer may sustain or incur as a consequence of (i)\u00a0a default by the Seller in payment when due of the Repurchase Price or Price Differential or (ii)\u00a0a default by the Seller in making any prepayment of Repurchase Price after the Seller has given a notice thereof in accordance with Section\u00a02.03 .",
+    "source": "LEDGAR (SEC EDGAR - Indemnity)"
+  },
+  {
+    "id": "real_cuad_09",
+    "gold_clause_type": "Indemnification",
+    "text": "The Warrant Agent shall be liable hereunder only for its own gross negligence, willful misconduct or bad faith. The Company agrees to indemnify the Warrant Agent and save it harmless against any and all liabilities, including judgments, claims, losses, damages, costs and reasonable counsel fees, for anything done or omitted by the Warrant Agent in the execution of this Warrant Agreement, except as a result of the Warrant Agent\u2019s gross negligence, willful misconduct, or bad faith.",
+    "source": "LEDGAR (SEC EDGAR - Indemnity)"
+  },
+  {
+    "id": "real_cuad_10",
     "gold_clause_type": "Governing Law",
-    "text": "This Agreement, and all claims or causes of action (whether in contract, tort, or statute) that may be based upon, arise out of, or relate to this Agreement, or the negotiation, execution, or performance of this Agreement, shall be governed by and construed in accordance with the substantive laws of India, without giving effect to any choice or conflict of law provision or rule. The courts situated at New Delhi shall have exclusive territorial jurisdiction over any proceedings arising hereunder.",
-    "contract_type": "Commercial Lease Agreement"
+    "text": "This Agreement is to be construed according to the laws          of the State of Illinois.",
+    "source": "CUAD (Governing Law)"
   },
   {
-    "id": "clause_04",
+    "id": "real_cuad_11",
+    "gold_clause_type": "Governing Law",
+    "text": "This Agreement is governed by English law and the parties submit to the exclusive jurisdiction of the English courts in  relation to any dispute (contractual or non-contractual) concerning this Agreement save that either party may apply to any court for an  injunction or other relief to protect its Intellectual Property Rights.",
+    "source": "CUAD (Governing Law)"
+  },
+  {
+    "id": "real_cuad_12",
+    "gold_clause_type": "Governing Law",
+    "text": "It will be governed by the law of the People's Republic of China ,otherwise it is governed by United Nations Convention on Contract for the International Sale of Goods.",
+    "source": "CUAD (Governing Law)"
+  },
+  {
+    "id": "real_cuad_13",
+    "gold_clause_type": "Governing Law",
+    "text": "This Agreement was entered into in the State of Florida, and its validity, construction, interpretation, and legal effect shall be governed by the laws and judicial decisions of the State of Florida applicable to contracts entered into and performed entirely within the State of Florida.",
+    "source": "CUAD (Governing Law)"
+  },
+  {
+    "id": "real_cuad_14",
+    "gold_clause_type": "Governing Law",
+    "text": "This Agreement shall be governed and construed according to the laws of the State of Kansas.",
+    "source": "CUAD (Governing Law)"
+  },
+  {
+    "id": "real_cuad_15",
     "gold_clause_type": "Dispute Resolution",
-    "text": "Any dispute, controversy, difference, or claim arising out of or relating to this Agreement, including the existence, validity, interpretation, performance, breach, or termination thereof, shall be referred to and finally resolved by arbitration administered by the Delhi International Arbitration Centre (DIAC) in accordance with the Arbitration and Conciliation Act, 1996. The arbitral tribunal shall consist of a sole arbitrator appointed mutually by the parties. The seat and venue of arbitration shall be New Delhi, and the proceedings shall be conducted in English.",
-    "contract_type": "Shareholders Agreement"
+    "text": "Any dispute, controversy, claim or action of any kind arising out of, relating to, or in connection with this Agreement, or in any way involving Company and Investor or their respective Affiliates, including any issues of arbitrability, will be resolved solely by final and binding arbitration in English before a retired judge at JAMS International, or its successor, in the Territory of the Virgin Islands, pursuant to the most expedited and Streamlined Arbitration Rules and procedures available. Any interim or final award may be entered and enforced by any court of competent jurisdiction. The final award will include the prevailing party\u2019s reasonable arbitration, expert witness and attorney fees, costs and expenses. Notwithstanding the foregoing, Investor may in its sole discretion bring an action in the U.S. District Court for the District of Nevada or the Middle District of Florida in addition to, in lieu of, or in aid of arbitration.",
+    "source": "LEDGAR (SEC EDGAR - Arbitration)"
   },
   {
-    "id": "clause_05",
+    "id": "real_cuad_16",
+    "gold_clause_type": "Dispute Resolution",
+    "text": "Any and all Arbitrable Disputes (except to the extent injunctive relief is sought) shall be resolved through the use of binding arbitration using, in the case of an Arbitrable Dispute involving a dispute of an amount equal to or greater than $1,000,000 or non\u2011monetary relief, three arbitrators, and in the case of an Arbitrable Dispute involving a dispute of an amount less than $1,000,000, one arbitrator, in each case in accordance with the Commercial Arbitration Rules of the American Arbitration Association, as supplemented to the extent necessary to determine any procedural appeal questions by the Federal Arbitration Act (Title 9 of the United States Code). If there is any inconsistency between this Article 22 and the Commercial Arbitration Rules or the Federal Arbitration Act, the terms of this Article 22 shall control the rights and obligations of the Parties. Arbitration must be initiated within the time limits set forth in this Agreement, or if no such limits apply, then within a reasonable time or the time period allowed by the applicable statute of limitations. Arbitration may be initiated by a Party (\u201c Claimant \u201d) serving written notice on the other Party (\u201c Respondent \u201d) that Claimant elects to refer the Arbitrable Dispute to binding arbitration. Claimant\u2019s notice initiating binding arbitration must identify the arbitrator Claimant has appointed. Respondent shall respond to Claimant within thirty (30)\u00a0days after receipt of Claimant\u2019s notice, identifying the arbitrator Respondent has appointed. If Respondent fails for any reason to name an arbitrator within the 30-day period, Claimant shall petition the American Arbitration Association for appointment of an arbitrator for Respondent\u2019s account. The two arbitrators so chosen shall select a third arbitrator within thirty (30)\u00a0days after the second arbitrator has been appointed, and, in the of an Arbitrable Dispute involving a dispute of an amount less than $1,000,000, such third arbitrator shall act as the sole arbitrator, and the sole role of the first two arbitrators shall be to appoint such third arbitrator. Claimant shall pay the compensation and expenses of the arbitrator named by or for it, and Respondent shall pay the compensation and expenses of the arbitrator named by or for it. The costs of petitioning for the appointment of an arbitrator, if any, shall be paid by Respondent. Claimant and Respondent shall each pay one-half of the compensation and expenses of the third arbitrator. All arbitrators must (a)\u00a0be neutral parties who have never been officers, directors or employees of the Operator, the Company or any of their Affiliates and (b)\u00a0have not less than seven (7)\u00a0years\u2019 experience in the energy industry. The hearing shall be conducted in the State of Delaware or the Philadelphia Metropolitan area and commence within thirty\u00a0(30)\u00a0days after the selection of the third arbitrator. The Company, the Operator and the arbitrators shall proceed diligently and in good faith in order that the award may be made as promptly as possible. Except as provided in the Federal Arbitration Act, the decision of the arbitrators shall be binding on and non-appealable by the Parties hereto. The arbitrators shall have no right to grant or award Special Damages. Notwithstanding anything herein the contrary, the Company may not dispute any amounts with respect to an invoice delivered in accordance with Article 5 that the Company has not objected to within one hundred twenty (120)\u00a0days of receipt thereof.",
+    "source": "LEDGAR (SEC EDGAR - Arbitration)"
+  },
+  {
+    "id": "real_cuad_17",
+    "gold_clause_type": "Dispute Resolution",
+    "text": "The Eligible Employees and Company agree that any and all disputes, controversies or claims of any kind or nature, including but not limited to any arising out of or in any related to the interpretation of this Plan or to the employment or separation of an Eligible Employee from the Company that have not been resolved by the Company within 90 days of the filing of a formal claim by the Eligible Employee under Section 5.7.3, shall be submitted to binding arbitration under the auspices and rules of the American Arbitration Association located nearest to where the Eligible Employee resides. Judgment upon an award rendered by the arbitrator may be entered in any competent court having jurisdiction over the dispute. The Eligible Employees and Company agree that arbitration is in lieu of any and all other civil legal proceedings and that all rights to resolve disputes through court or trial by jury are hereby waived. Furthermore, the Company agrees that it will reimburse an Eligible Employee for any legal costs arising from an Arbitration proceeding that results in a favorable outcome for such Eligible Employee.",
+    "source": "LEDGAR (SEC EDGAR - Arbitration)"
+  },
+  {
+    "id": "real_cuad_18",
+    "gold_clause_type": "Dispute Resolution",
+    "text": "Subject to, and in accordance with the provisions of Article 3 of the Plan, any dispute or claim arising out of or relating to the Plan, this Agreement or the Notice of Restricted Stock Grant shall be settled by binding arbitration before a single arbitrator in Jacksonville, Florida and in accordance with the Commercial Arbitration Rules of the American Arbitration Association. The arbitrator shall decide any issues submitted in accordance with the provisions and commercial purposes of the Plan, this Agreement and the Notice of Restricted Stock Grant, provided that all substantive questions of law shall be determined in accordance with the state and federal laws applicable in Indiana, without regard to internal principles relating to conflict of laws.",
+    "source": "LEDGAR (SEC EDGAR - Arbitration)"
+  },
+  {
+    "id": "real_cuad_19",
+    "gold_clause_type": "Dispute Resolution",
+    "text": "By signing this letter agreement, and as a condition to your continued management service with the Company, you agree to sign the enclosed Arbitration Agreement within thirty (30) days of signing this Agreement.",
+    "source": "LEDGAR (SEC EDGAR - Arbitration)"
+  },
+  {
+    "id": "real_cuad_20",
     "gold_clause_type": "Force Majeure",
-    "text": "Neither party shall be liable or responsible to the other party, nor be deemed to have defaulted under or breached this Agreement, for any failure or delay in fulfilling or performing any term of this Agreement (except for payment obligations), when and to the extent such failure or delay is caused by or results from acts of God, flood, fire, earthquake, explosion, war, invasion, hostilities, terrorist threats or acts, riot, civil unrest, government order, law, or action, embargoes, blockades, or national or regional emergency, provided that the affected party gives prompt written notice within five (5) business days and uses diligent efforts to end the failure or delay.",
-    "contract_type": "Supply Chain Agreement"
+    "text": "Neither party shall be liable for any failure or delay in performing its obligations under this Agreement if such failure or delay is caused by an Event of Force Majeure beyond its reasonable control, including acts of God, flood, fire, earthquake, war, invasion, hostilities, terrorist threats or acts, riot or civil unrest, or catastrophic utility failure.",
+    "source": "SEC EDGAR Form 10-K Master Commercial Supply Agreement"
   },
   {
-    "id": "clause_06",
+    "id": "real_cuad_21",
+    "gold_clause_type": "Force Majeure",
+    "text": "If either party is prevented from performing any of its obligations hereunder by reason of any circumstance beyond its reasonable control, including epidemic, quarantine restrictions, freight embargoes, or government order, the affected party shall give prompt notice to the other party and the affected performance time shall be extended accordingly.",
+    "source": "SEC EDGAR Form 8-K Turnkey Distribution Agreement"
+  },
+  {
+    "id": "real_cuad_22",
     "gold_clause_type": "Confidentiality",
-    "text": "Each receiving party agrees to retain in strict confidence all non-public, confidential, or proprietary information disclosed by the disclosing party, whether disclosed orally or in writing, including without limitation technical specifications, source code, financial projections, business methodologies, customer lists, and pricing terms. The receiving party shall exercise the same degree of care to protect such Confidential Information as it uses to protect its own confidential materials of like nature, but in no event less than reasonable care, and shall not disclose Confidential Information to any third party without prior written consent.",
-    "contract_type": "Non-Disclosure Agreement"
+    "text": "You agree to hold the facts and circumstances surrounding the execution of this Agreement and the Supplemental Release in strictest confidence.",
+    "source": "LEDGAR (SEC EDGAR - Confidentiality)"
   },
   {
-    "id": "clause_07",
+    "id": "real_cuad_23",
+    "gold_clause_type": "Confidentiality",
+    "text": "Purchaser and its representatives shall hold in strictest confidence all data and information obtained from Seller regarding the Property or obtained through physical access to the Property granted by Seller, whether obtained before or after the execution and delivery of this Agreement, and shall not disclose the same to others prior to Closing; provided, however, that it is understood and agreed that Purchaser may disclose such data and information to Title Company and Purchaser\u2019s actual and potential lenders and insurers and to the employees, consultants, contractors, accountants and attorneys of Purchaser, Title Company and Purchaser\u2019s actual and potential lenders and insurers (collectively, the \u201cDisclosure Parties\u201d) provided that such persons agree to treat such data and information confidentially. In the event this Agreement is terminated, and to the extent Purchaser has received hard copies of any confidential materials from Seller, Purchaser shall promptly return to Seller any such hard copies of confidential materials. In the event of a breach or threatened breach by Purchaser or its agents or representatives of this Section 10.1, Seller shall be entitled, as Seller\u2019s sole remedy, to seek an injunction restraining Purchaser or its agents or representatives from disclosing, in whole or in part, such confidential information. The provisions of this Section 10.1 shall survive Closing. Notwithstanding the foregoing or Section 10.2 hereof, no information obtained by Purchaser or any Disclosure Parties shall be deemed confidential or subject to the terms and conditions of this Agreement if such information (i) was publicly known or made generally available in the public domain prior to the time of disclosure, (ii) becomes publicly known or made generally available after disclosure through no action or inaction of Purchaser or any Disclosure Parties, (iii) is in the possession of Purchaser or any Disclosure Parties without confidentiality restrictions at the time of such disclosure, or (iv) is independently discovered or developed by Purchaser or any Disclosure Parties. In addition, notwithstanding anything in this Agreement to the contrary, Purchaser and any Disclosure Parties may disclose any such information to third parties to the extent required by law or judicial process, and if Purchaser (or its assigns) acquires title to the Property, this Section 10.1 shall automatically become null and void at such time and have no further effect.",
+    "source": "LEDGAR (SEC EDGAR - Confidentiality)"
+  },
+  {
+    "id": "real_cuad_24",
+    "gold_clause_type": "Confidentiality",
+    "text": "Notwithstanding anything herein to the contrary, to the extent that the Purchaser has executed or is otherwise bound by a confidentiality agreement in favor of the Company, \u00a0the Purchaser shall continue to be bound by such confidentiality agreement.",
+    "source": "LEDGAR (SEC EDGAR - Confidentiality)"
+  },
+  {
+    "id": "real_cuad_25",
+    "gold_clause_type": "Confidentiality",
+    "text": "Each Holder agrees that all material non-public information provided pursuant to or in accordance with the terms of this Agreement shall be kept confidential by the person to whom such information is provided, until such time as such information becomes public other than through violation of this provision. Notwithstanding the foregoing, any party may disclose the information (i)\u00a0if required to do so by any law, rule, regulation, order, decree or subpoena of any governmental agency or authority or court, (ii)\u00a0that (A)\u00a0is or becomes available to such party on a non-confidential basis from a source other than the Company or its representatives (which source was not to such party\u2019s knowledge prohibited from disclosing such information to such party by a legal, contractual or fiduciary obligation owed to the Company), (B)\u00a0is already in such party\u2019s possession (not including information furnished by or on behalf of the Company), and (C)\u00a0is independently developed or acquired by such party without reference to, or use of, any material non-public information and without violating this Section\u00a05.13 and (iii)\u00a0to its representatives who have a need to know such information in connection with the transactions contemplated by this Agreement, provided that such party shall remain liable for any breach of this Section\u00a05.13 by its representatives.",
+    "source": "LEDGAR (SEC EDGAR - Confidentiality)"
+  },
+  {
+    "id": "real_cuad_26",
+    "gold_clause_type": "Confidentiality",
+    "text": "Each Agent, each Lender and each Transferee shall hold all non-public information obtained by such Agent, such Lender or such Transferee pursuant to the requirements of this Agreement in accordance with such Agent\u2019s, such Lender\u2019s and such Transferee\u2019s customary procedures for handling confidential information of this nature; provided , however, each Agent, each Lender and each Transferee may disclose such confidential information (a) to its examiners, Affiliates, outside auditors, counsel and other professional advisors, (b) to any Agent, any Lender or to any prospective Transferees, and (c) as required or requested by any Governmental Body or representative thereof or pursuant to legal process; provided, further that (i) unless specifically prohibited by Applicable Law, each Agent, each Lender and each Transferee shall use its reasonable best efforts prior to disclosure thereof, to notify the applicable Borrower of the applicable request for disclosure of such non-public information (A)\u00a0by a Governmental Body or representative thereof (other than any such request in connection with an examination of the financial condition of a Lender or a Transferee by such Governmental Body) or (B) pursuant to legal process and (ii) in no event shall any Agent, any Lender or any Transferee be obligated to return any materials furnished by any Borrower other than those documents and instruments in possession of any Agent or any Lender in order to perfect its Lien on the Collateral once the Obligations have been paid in full and this Agreement has been terminated. Each Borrower acknowledges that from time to time financial advisory, investment banking and other services may be offered or provided to such Borrower or one or more of its Affiliates (in connection with this Agreement or otherwise) by any Lender or by one or more Subsidiaries or Affiliates of such Lender and each Borrower hereby authorizes each Lender to share any information delivered to such Lender by such Borrower and its Subsidiaries pursuant to this Agreement, or in connection with the decision of such Lender to enter into this Agreement, to any such Subsidiary or Affiliate of such Lender, it being understood that any such Subsidiary or Affiliate of any Lender receiving such information shall be bound by the provisions of this Section 16.15 as if it were a Lender hereunder. Such authorization shall survive the repayment of the other Obligations and the termination of this Agreement. Notwithstanding any non-disclosure agreement or similar document executed by Administrative Agent in favor of any Borrower or any of any Borrower\u2019s affiliates, the provisions of this Agreement shall supersede such agreements. Notwithstanding anything contained herein to the contrary, no material non-public information obtained by the Administrative Agent or any Lender pursuant to the requirements of this Agreement shall be disclosed at any time to a Company Competitor without the express consent of NESL.",
+    "source": "LEDGAR (SEC EDGAR - Confidentiality)"
+  },
+  {
+    "id": "real_cuad_27",
     "gold_clause_type": "Intellectual Property",
-    "text": "Customer shall own all right, title, and interest (including all patent, copyright, trademark, trade secret, and other intellectual property rights) in and to all Deliverables, software modifications, custom integrations, work products, and documentation developed or delivered by Service Provider under this Agreement. Service Provider hereby irrevocably assigns, transfers, and conveys to Customer all right, title, and interest in such Deliverables upon creation. Service Provider retains ownership of its pre-existing background intellectual property.",
-    "contract_type": "Technology Services Agreement"
+    "text": "Company  hereby   appoints                            Distributor as Company's exclusive distributor within                            the Market and grants to  Distributor  the  exclusive                            right  to sell and  distribute  Products  within  the                            Market,   and   Distributor   hereby   accepts   such                            appointment  and such grant,  in accordance  with the                            terms and conditions of this  Agreement.",
+    "source": "CUAD (License Grant)"
   },
   {
-    "id": "clause_08",
+    "id": "real_cuad_28",
+    "gold_clause_type": "Intellectual Property",
+    "text": "The Company  hereby grants the  Distributor                            the right to do business  and use the name  \"Electric                            City of  Illinois\"  or a  similar  variation  thereof                            (collectively   the   \"Names\")  for  use  under  this                            Agreement.",
+    "source": "CUAD (License Grant)"
+  },
+  {
+    "id": "real_cuad_29",
+    "gold_clause_type": "Intellectual Property",
+    "text": "Subject to the terms and conditions of this Agreement, Google grants to Distributor a limited, [ * ] license  during the Term to use the Google Trademarks, in accordance with Google's trademark usage guidelines, solely to market and promote the  Products consistent with this Agreement, provided that all use of the Google Trademarks shall be subject to Google's prior review and  advance written consent.",
+    "source": "CUAD (License Grant)"
+  },
+  {
+    "id": "real_cuad_30",
+    "gold_clause_type": "Intellectual Property",
+    "text": "Subject to the terms and conditions of this Agreement, Google grants to Distributor a [* ] license during the  Term to: (a) bundle the Distribution Products, in machine-readable binary code format only, solely with Distributor App(s); (b) distribute  Bundles directly (or indirectly, subject to Clause 2.2 (Third Party Distribution)) to End Users in the Territory; (c) when indicated by the  applicable Criteria Checker and requested by the End User in accordance with clause 3.2 (Form of Distribution Offering), install the  Chrome Browser or the Google Toolbar (as applicable) on the End User's system using the Google Installers; and (d) reproduce (or have  reproduced by Third Party Distributors as defined in Clause 2.2 (Third Party Distribution)), the Distribution Products to the extent  necessary to exercise the rights granted in (a), (b) and (c).",
+    "source": "CUAD (License Grant)"
+  },
+  {
+    "id": "real_cuad_31",
+    "gold_clause_type": "Intellectual Property",
+    "text": "CONSULTANT hereby gives and grants to ADAMS GOLF the exclusive right and license to use CONSULTANT'S ENDORSEMENT in connection with the manufacture, sale, distribution, advertising and promotion of PRODUCT in the CONTRACT TERRITORY.",
+    "source": "CUAD (License Grant)"
+  },
+  {
+    "id": "real_cuad_32",
     "gold_clause_type": "Payment",
-    "text": "Customer shall pay all undisputed invoiced amounts within thirty (30) calendar days of the date of Service Provider's invoice. All payments shall be made in Indian Rupees (INR) via electronic funds transfer (NEFT/RTGS) to the designated bank account of Service Provider. Any undisputed payments not received by the due date shall accrue simple interest at the rate of one percent (1.0%) per month or the highest rate permitted by applicable law, whichever is lower, calculated daily from the due date until paid in full.",
-    "contract_type": "Vendor Master Agreement"
+    "text": "The Company  also  reserves  the right to                            increase  or  decrease  the price  per unit  based on                            Company   wide   changes   in  unit   prices  to  all                            distributors of the Company,  provided however,  that                            any price changes, other than those based on the CPI,                            shall be uniformly applied to all distributors of the                            Products   and  shall   reasonably   applied  to  all                            distributors  of the  Products  and shall  reasonably                            reflect Company's costs of manufacturing the Products                            and/or  market  demand  for  the  Products,  provided                            further  than any increase in price based upon market                            demand   shall   not  be  so  great  as  to   deprive                            Distributor  of  its  normal  and  customary   profit                            margin.",
+    "source": "CUAD (Price Restrictions)"
   },
   {
-    "id": "clause_09",
+    "id": "real_cuad_33",
+    "gold_clause_type": "Payment",
+    "text": "The prices set forth in                            Section   2.4(a)  shall  be  subject  to   adjustment                            annually  on the  first  day  of  each  Product  Year                            beginning in the calendar  year 2000 and on the first                            day of each succeeding Product Year for the remainder                            of the Term and all  renewals  of this  Agreement  in                            proportion   to  the  increase  or  decrease  in  the                            Consumer  Price Index (CPI) as compared to the CPI as                            it  existed  on the  first  day of the  Term  of this                            Agreement.",
+    "source": "CUAD (Price Restrictions)"
+  },
+  {
+    "id": "real_cuad_34",
+    "gold_clause_type": "Payment",
+    "text": "A minimum of a $250,000.00  purchase  order  must be  received  by Company by the first of each month for a total (12) month  period.",
+    "source": "CUAD (Minimum Commitment)"
+  },
+  {
+    "id": "real_cuad_35",
+    "gold_clause_type": "Payment",
+    "text": "Company's representatives will                            make themselves available three days per month in the                            first   Product   Year  to  consult  with  and  train                            Distributor.",
+    "source": "CUAD (Minimum Commitment)"
+  },
+  {
+    "id": "real_cuad_36",
+    "gold_clause_type": "Payment",
+    "text": "(A)    375 units in the first Product Year (1999)\n\n                  (B)    750 units in the next succeeding Product Year; (2000)\n\n                  (C)    937 units in the next succeeding Product Year; (2001)\n\n                  (D)    1,171 units in the next succeeding Product Year; (2002)\n\n                  (E)    1,463 units in the next succeeding Product Year; (2003)\n\n                  (F)    1,828 units in the next succeeding Product Year; (2004)\n\n                  (G)    2,285 units in the next succeeding Product Year; (2005)\n\n                  (H)    2,856  unit each in the lat  three  years of                          the initial Term of this  Agreement  and any                          renewals thereof.",
+    "source": "CUAD (Minimum Commitment)"
+  },
+  {
+    "id": "real_cuad_37",
     "gold_clause_type": "Termination",
-    "text": "Either party may terminate this Agreement without cause upon giving sixty (60) days prior written notice to the other party. Furthermore, either party may terminate this Agreement immediately upon written notice if: (a) the other party commits a material breach of this Agreement that is incurable, or, if curable, fails to cure such breach within thirty (30) days of receiving written notice thereof; or (b) the other party becomes insolvent, enters into receivership, liquidation, or bankruptcy, or ceases to conduct its business in the ordinary course.",
-    "contract_type": "Employment Agreement"
+    "text": "Upon the expiration or termination of                   this  Agreement,  pursuant to Section  4.1 or 4.2 hereof,  the                   Company may, at its option to be  exercised  within 30 days of                   the date of the termination of this Agreement, and in its sole                   discretion,  repurchase  any Products in the possession of the                   Distributor  at the net invoice price paid by the  Distributor                   to  the  Company  less  any  applicable  special   allowances,                   discounts, shipping or allowances for cooperative advertising.",
+    "source": "CUAD (Post-Termination Services)"
   },
   {
-    "id": "clause_10",
+    "id": "real_cuad_38",
+    "gold_clause_type": "Termination",
+    "text": "Following  expiration or                   termination of this Agreement, the Distributor may continue to                   sell any Products in the Market which are in its inventory",
+    "source": "CUAD (Post-Termination Services)"
+  },
+  {
+    "id": "real_cuad_39",
+    "gold_clause_type": "Termination",
+    "text": "If Company  terminates  the  Agreement  without  cause and for                   reasons other than  Distributor's  failure to meet its minimum                   expectations;   it  shall   repurchase  from  Distributor  any                   unopened  Product,  and shall bear all shipping,  handling and                   related  costs  notwithstanding  any other  remedies  to which                   Distributor  may be  entitled.",
+    "source": "CUAD (Post-Termination Services)"
+  },
+  {
+    "id": "real_cuad_40",
+    "gold_clause_type": "Termination",
+    "text": "Either party may terminate this Agreement without cause at any time effective upon thirty (30) days' written notice.",
+    "source": "CUAD (Termination For Convenience)"
+  },
+  {
+    "id": "real_cuad_41",
+    "gold_clause_type": "Termination",
+    "text": "Either Consultant or Company may terminate this Agreement upon prior written notice thereof to the other party.",
+    "source": "CUAD (Termination For Convenience)"
+  },
+  {
+    "id": "real_cuad_42",
     "gold_clause_type": "Non-Compete",
-    "text": "During the term of employment and for a period of twenty-four (24) months following termination of employment for any reason, Employee shall not, directly or indirectly, engage in, own, manage, operate, consult for, or be employed by any enterprise or business entity that competes directly with the Company's SaaS business within the territory of India or globally.",
-    "contract_type": "Employment Agreement"
+    "text": "When endorsing a non-competitive product, under no circumstances shall CONSULTANT wear, play, use, hold or in any way be associated with an ADAMS GOLF competitor's Product.",
+    "source": "CUAD (Non-Compete)"
   },
   {
-    "id": "clause_11",
+    "id": "real_cuad_43",
+    "gold_clause_type": "Non-Compete",
+    "text": "Without limiting the foregoing, Consultant agrees to use his or her best efforts (A) to segregate Consultant's",
+    "source": "CUAD (Non-Compete)"
+  },
+  {
+    "id": "real_cuad_44",
+    "gold_clause_type": "Non-Compete",
+    "text": "Consultant hereby certifies that Consultant has no outstanding agreement or obligation that is in conflict with any of the provisions of this Agreement, or that would preclude Consultant from complying with the provisions hereof, and further certifies that Consultant will not enter into any such conflicting agreement during the term of this Agreement.",
+    "source": "CUAD (Non-Compete)"
+  },
+  {
+    "id": "real_cuad_45",
+    "gold_clause_type": "Non-Compete",
+    "text": "Subject to written waivers that may be provided by the Company upon request, which shall not be unreasonably withheld, Consultant agrees that, during the term of this Agreement, Consultant will not directly or indirectly (i) participate in the formation of any business or commercial entity in the Field of Interest or otherwise competitive with the Company.",
+    "source": "CUAD (Non-Compete)"
+  },
+  {
+    "id": "real_cuad_46",
+    "gold_clause_type": "Non-Compete",
+    "text": "Services performed under this Agreement from Consultant's work done for any other companies for whom Consultant is providing services so as to minimize any questions of disclosure of, or rights under, any inventions, (B) to notify the Company if at any time the Consultant believes that such questions may result from his or her performance under this Agreement and (C) to assist the Company in fairly resolving any questions in this regard which may arise.",
+    "source": "CUAD (Non-Compete)"
+  },
+  {
+    "id": "real_cuad_47",
     "gold_clause_type": "Non-Solicitation",
-    "text": "During the term of this Agreement and for twelve (12) months thereafter, Consultant shall not solicit, recruit, induce, or encourage any employee, contractor, or customer of the Company to leave the Company's employ, terminate their engagement, or divert business away from the Company.",
-    "contract_type": "Consulting Agreement"
+    "text": "Distributor further agrees that it will not interfere                            with or  otherwise  disrupt  the  business  relations                            between the Company or nay of its  affiliates and any                            of their current or prospective customers,  suppliers                            or distributors, during the",
+    "source": "CUAD (No-Solicit Of Customers)"
   },
   {
-    "id": "clause_12",
+    "id": "real_cuad_48",
+    "gold_clause_type": "Non-Solicitation",
+    "text": "Term of the  Agreement  and for a period of  eighteen\n\n\n\n\n\n                           (18) months thereafter,  nor will Distributor solicit                            any  customer  or  potential  customer  of Company to                            purchase a competitive product during that period.",
+    "source": "CUAD (No-Solicit Of Customers)"
+  },
+  {
+    "id": "real_cuad_49",
+    "gold_clause_type": "Non-Solicitation",
+    "text": "During the Term of this Agreement and for a period of                            twelve (12) months  thereafter,  the  Distributor (on                            behalf of itself,  each of its affiliates and each of                            their respective representatives) agrees that it will                            not  directly  or  indirectly  solicit  or  hire  any                            executive,  managerial  or technical  employee of the                            Company or any of its affiliates.",
+    "source": "CUAD (No-Solicit Of Employees)"
+  },
+  {
+    "id": "real_cuad_50",
+    "gold_clause_type": "Non-Solicitation",
+    "text": "[***], neither Valeant nor Dova (nor any of their respective Affiliates) shall directly or indirectly solicit for hire or employee as an employee, consultant or otherwise any of the other Party's professional personnel who have had direct involvement with the JSC, with the Valeant Activities under this Agreement (which, in the case of Valeant, includes the Field Force Personnel) or with Dova's commercialization activities for the Product, without the other Party's prior written consent.",
+    "source": "CUAD (No-Solicit Of Employees)"
+  },
+  {
+    "id": "real_cuad_51",
+    "gold_clause_type": "Non-Solicitation",
+    "text": "In the event Subcontractor directly employs or contracts with an employee of EDGE without the consent of EDGE, Subcontractor shall pay as liquidated damages two times the then monthly salary of the employee for a three-month period of time.",
+    "source": "CUAD (No-Solicit Of Employees)"
+  },
+  {
+    "id": "real_cuad_52",
     "gold_clause_type": "Warranties",
-    "text": "Licensor warrants that the Licensed Software will operate substantially in accordance with the published Documentation for a period of ninety (90) days from delivery. If Licensee notifies Licensor of a defect within the warranty period, Licensor's sole obligation and Licensee's exclusive remedy shall be for Licensor to use commercially reasonable efforts to correct the reproducible non-conformity or, at Licensor's option, refund the license fee paid.",
-    "contract_type": "Software License Agreement"
+    "text": "In the event that Company is unable or unwilling to                   promptly  perform any warranty work without  reasonable  cause                   and following  full and fair  opportunity  to do so, or in the                   event of the necessity  for  emergency  repairs of a defective                   Product  for  which  there  is no  reasonable  possibility  of                   performance by Company,  Distributor may perform such warranty                   work or hire a third party to perform such  warranty  work and                   the reasonable cost thereof shall be paid by Company.",
+    "source": "CUAD (Warranty Duration)"
   },
   {
-    "id": "clause_13",
+    "id": "real_cuad_53",
+    "gold_clause_type": "Warranties",
+    "text": "If, within the twenty-four  (24) month warranty                   period set forth above,  Company  received from Distributor or                   any of  Distributor's  end-user's  a notice  which may be oral                   notice  confirmed in writing)  that any of the  Products  sold                   hereunder do not meet the Warranties  specified above, Company                   shall  thereupon  correct  each such defect by  providing  the                   necessary repairs,  and/or replacement parts, or if necessary,                   Products.",
+    "source": "CUAD (Warranty Duration)"
+  },
+  {
+    "id": "real_cuad_54",
+    "gold_clause_type": "Warranties",
+    "text": "The Company reserves the                   right to reject any Products  that are not factory  sealed and                   in new and unused  condition.",
+    "source": "CUAD (Warranty Duration)"
+  },
+  {
+    "id": "real_cuad_55",
+    "gold_clause_type": "Warranties",
+    "text": "In the event of any  damages or                            other  defect in a  Product  which is  discovered  by                            Distributor   within   365   days   of   satisfactory                            installation  of  a  Product  at  Distributor's  or a                            subdistributor's   customer,  the  Distributor  shall                            promptly   report  the  same  to  the   Company   and                            reasonably  demonstrate the defect to the Company.",
+    "source": "CUAD (Warranty Duration)"
+  },
+  {
+    "id": "real_cuad_56",
+    "gold_clause_type": "Warranties",
+    "text": "The  Company  represents  that,  to the  best  of its                            knowledge,  Products are in compliance with all laws,                            and  that  the  Products  will  not be  hazardous  or                            dangerous  when  used  for  their  intended  purpose.                            Products  do not  cause  harmful  emissions  or other                            environmental  hazards and Products do not violate or                            infringe any patents, copyrights, trademarks or other                            rights  of  nay  third  party(ies).",
+    "source": "CUAD (Warranty Duration)"
+  },
+  {
+    "id": "real_cuad_57",
     "gold_clause_type": "Representations",
-    "text": "Each party represents and warrants to the other that: (i) it is a corporation duly organized, validly existing, and in good standing under the laws of its jurisdiction of incorporation; (ii) it has the full legal power, corporate authority, and authorizations necessary to execute, deliver, and perform this Agreement; and (iii) the execution and performance of this Agreement does not violate any applicable law, judicial decree, or third-party agreement.",
-    "contract_type": "Joint Venture Agreement"
+    "text": "The Company is not providing Grantee with advice, warranties, or representations regarding any of the legal, tax, or business effects to Grantee with respect to the Plan or this Award Agreement.\u00a0 Grantee is encouraged to seek legal, tax, and business advice from Grantee\u2019s own legal, tax, and business advisers as soon as possible.\u00a0 By accepting this Award and the Shares covered thereby, and by signing this Award Agreement, Grantee acknowledges that Grantee is familiar with the terms of the Award Agreement and the Plan, that Grantee has been encouraged by the Company to discuss the Award and the Plan with Grantee\u2019s own legal, tax, and business advisers, and that Grantee agrees to be bound by the terms of the Plan and the Award Agreement.",
+    "source": "LEDGAR (SEC EDGAR - Representations)"
   },
   {
-    "id": "clause_14",
+    "id": "real_cuad_58",
+    "gold_clause_type": "Representations",
+    "text": "Each of the undersigned Grantor hereby represents and warrants that this Supplement has been duly authorized, executed and delivered by it and that this Supplement and the Security Agreement constitute the legal, valid and binding obligation of each of the undersigned, enforceable against it in accordance with its terms.",
+    "source": "LEDGAR (SEC EDGAR - Representations)"
+  },
+  {
+    "id": "real_cuad_59",
+    "gold_clause_type": "Representations",
+    "text": "The representations and warranties of Buyer contained in this Agreement and the Ancillary Agreements (i)\u00a0shall be true and correct at and as of the Effective Date in all material respects and (ii)\u00a0shall be true and correct on and as of the Closing Date with the same effect as though made on and as of such date in all respects. Buyer shall have duly performed and complied in all respects with all agreements, covenants and conditions required by this Agreement and each of the Ancillary Agreements to which it is a party, to be performed or complied with by it prior to or on the Closing Date.",
+    "source": "LEDGAR (SEC EDGAR - Representations)"
+  },
+  {
+    "id": "real_cuad_60",
+    "gold_clause_type": "Representations",
+    "text": "Except as otherwise specified herein, the terms and provisions hereof shall in no manner impair, limit, restrict or otherwise affect the obligations of Borrowers or any third party to Agent and Lenders as evidenced by the Credit Documents. Borrowers hereby acknowledge, agree, and represent that (a) as of the date of this Amendment, there are no claims or offsets against, or defenses or counterclaims to, the terms or provisions of the Credit Documents or the other obligations created or evidenced by the Credit Documents; (b) as of the date of this Amendment, no Borrower has any claims, offsets, defenses or counterclaims arising from any of Agent\u2019s or any existing or prior Lender\u2019s acts or omissions with respect to the Credit Documents or Agent\u2019s or any existing or prior Lender\u2019s performance under the Credit Documents; and (c) Borrowers promise to pay to the order of Agent and Lenders the indebtedness evidenced by the Notes according to the terms thereof. In consideration of the modification of certain provisions of the Credit Documents, all as herein provided, and the other benefits received by Borrowers hereunder, Borrowers hereby RELEASE, RELINQUISH and forever DISCHARGE Agent and Lenders, and their predecessors, successors, assigns, shareholders, principals, parents, subsidiaries, agents, officers, directors, employees, attorneys and representatives (collectively, the \u201c Released Parties \u201d), of and from any and all present claims, demands, actions and causes of action of any and every kind or character, whether known or unknown, which a Borrower has or may have against Released Parties arising out of or with respect to any and all transactions relating to the Loan Agreement, the Notes, and the other Credit Documents occurring prior to the date hereof.",
+    "source": "LEDGAR (SEC EDGAR - Representations)"
+  },
+  {
+    "id": "real_cuad_61",
     "gold_clause_type": "Data Protection",
-    "text": "To the extent Service Provider processes any Personal Data on behalf of Customer in performing the Services, Service Provider shall: (a) process such data solely in accordance with Customer's documented lawful instructions and the provisions of the Digital Personal Data Protection Act, 2023 (DPDPA); (b) implement robust technical and organizational security measures, including AES-256 encryption at rest and in transit; and (c) immediately notify Customer within twenty-four (24) hours of becoming aware of any suspected or confirmed personal data breach.",
-    "contract_type": "Data Processing Addendum"
+    "text": "Vendor agrees to process Customer Personal Data solely on behalf of Customer and in accordance with Customer's documented instructions, the European Union General Data Protection Regulation (GDPR), and the Digital Personal Data Protection Act (DPDPA). Vendor shall implement robust administrative and technical safeguards including encryption at rest and in transit.",
+    "source": "SEC EDGAR Form 10-Q Cloud Services Data Processing Addendum"
   },
   {
-    "id": "clause_15",
+    "id": "real_cuad_62",
+    "gold_clause_type": "Data Protection",
+    "text": "To the extent Service Provider has access to Personal Data, Service Provider shall maintain appropriate technical and organizational measures to protect such data against accidental or unlawful destruction, loss, alteration, unauthorized disclosure or access, and shall promptly notify Customer within 24 hours of any confirmed Data Breach.",
+    "source": "SEC EDGAR Form S-1 SaaS Master Terms"
+  },
+  {
+    "id": "real_cuad_63",
     "gold_clause_type": "Assignment",
-    "text": "Neither party may assign, transfer, delegate, or subcontract any of its rights or obligations under this Agreement, in whole or in part, without the prior written consent of the other party; provided, however, that either party may assign this Agreement without consent to a successor entity in connection with a merger, acquisition, corporate reorganization, or sale of substantially all assets, upon prompt written notice.",
-    "contract_type": "Distribution Agreement"
+    "text": "No  assignment  of this  Agreement  or any  right                   accruing  hereunder  shall be made by the Distributor in whole                   or in part,  without the prior written consent of the Company,                   which  consent  shall  not  be  unreasonably  withheld.",
+    "source": "CUAD (Anti-Assignment)"
   },
   {
-    "id": "clause_16",
+    "id": "real_cuad_64",
+    "gold_clause_type": "Assignment",
+    "text": "In  the  event  either  party  (a)  becomes                   adjudicated insolvent,  (b) discontinues its business, (c) has                   voluntary of  involuntary  bankruptcy  proceedings  instituted                   against  it, or (d) makes an  assignment  for the  benefit  of                   creditors, the other party shall be entitled to terminate this                   Agreement effective immediately upon written notice.",
+    "source": "CUAD (Anti-Assignment)"
+  },
+  {
+    "id": "real_cuad_65",
+    "gold_clause_type": "Assignment",
+    "text": "[ * ] may [ * ]any of its rights or obligations under this Agreement without the prior written consent of [ * ].",
+    "source": "CUAD (Anti-Assignment)"
+  },
+  {
+    "id": "real_cuad_66",
+    "gold_clause_type": "Assignment",
+    "text": "Neither ADAMS GOLF nor CONSULTANT shall have the right to grant sublicenses hereunder or to assign, alienate or otherwise transfer any of its rights or obligations hereunder.",
+    "source": "CUAD (Anti-Assignment)"
+  },
+  {
+    "id": "real_cuad_67",
+    "gold_clause_type": "Assignment",
+    "text": "Neither this Agreement nor any right hereunder or interest herein may be assigned or transferred by Consultant without the express written consent of Company.",
+    "source": "CUAD (Anti-Assignment)"
+  },
+  {
+    "id": "real_cuad_68",
     "gold_clause_type": "Notices",
-    "text": "All notices, requests, consents, claims, demands, waivers, and other communications hereunder shall be in writing and addressed to the recipient at the registered office address specified in the preamble, and shall be delivered by hand, nationally recognized overnight courier with tracking, or sent by registered post with acknowledgment due, or sent via electronic mail with confirmed receipt.",
-    "contract_type": "Franchise Agreement"
+    "text": "This Agreement shall automatically be renewed for one (1) or more one (1) month periods unless either the Customer or i-on gives notice to the other party of its intention not to renew the",
+    "source": "CUAD (Notice Period To Terminate Renewal)"
   },
   {
-    "id": "clause_17",
+    "id": "real_cuad_69",
+    "gold_clause_type": "Notices",
+    "text": "Agreement, which notice must be given not less than fifteen (15) days before the end of the respective initial or renewal term.",
+    "source": "CUAD (Notice Period To Terminate Renewal)"
+  },
+  {
+    "id": "real_cuad_70",
+    "gold_clause_type": "Notices",
+    "text": "Notwithstanding the foregoing, this  Agreement can be terminated by EKR at the end of the Initial Term by delivery of written notice to PPI at least one hundred eighty (180)  days prior to the end of the Initial Term or any renewal term.",
+    "source": "CUAD (Notice Period To Terminate Renewal)"
+  },
+  {
+    "id": "real_cuad_71",
+    "gold_clause_type": "Notices",
+    "text": "After the Initial Term, this Agreement shall continue on a month to month basis until terminated by either party upon thirty (30) days prior written notice to the other setting forth the effective date of such termination.",
+    "source": "CUAD (Notice Period To Terminate Renewal)"
+  },
+  {
+    "id": "real_cuad_72",
+    "gold_clause_type": "Notices",
+    "text": "The term of this Agreement is twelve (12) months from the date hereof, and will be automatically renewed for one (1) additional twelve month period unless either party shall notify the other in writing of its intention not to renew. Such notice must be given ninety (90) days prior to expiration of the original term.",
+    "source": "CUAD (Notice Period To Terminate Renewal)"
+  },
+  {
+    "id": "real_cuad_73",
     "gold_clause_type": "Audit",
-    "text": "Upon thirty (30) days prior written notice, Company or its designated independent certified public accountants shall have the right, during normal business hours and without unreasonably disrupting Vendor's operations, to inspect and audit Vendor's books, records, systems, and facilities to verify compliance with the terms and billing calculations of this Agreement.",
-    "contract_type": "Vendor Master Agreement"
+    "text": "During the Term, and for a period of [ * ] thereafter, Google may audit Distributor's relevant records to confirm  Distributor's compliance with this Agreement.",
+    "source": "CUAD (Audit Rights)"
   },
   {
-    "id": "clause_18",
+    "id": "real_cuad_74",
+    "gold_clause_type": "Audit",
+    "text": "Dova shall have the right, at its own expense, during normal business hours and upon reasonable prior notice, through a certified public accounting firm or other auditor selected by Dova and reasonably acceptable to Valeant and upon execution of a confidentiality agreement reasonably satisfactory to Valeant in form and substance, to inspect and audit the applicable records and books maintained by Valeant relating to the Valeant Activities for purposes of verifying Valeant's compliance with the terms of this Agreement, provided that (i) such examination shall not take place more often than once per every twelve (12) months during the Term and once during the one (1) year period following the end of the Term, and (ii) such examination shall not cover a period of time that has previously been audited; provided that Dova shall have the right to conduct additional \"for cause\" audits to the extent necessary to address significant compliance problems relating to Valeant's obligations hereunder or in response to any inquiry, inspection, investigation or other requirements of a Government Authority in the Territory relating to the Valeant Activities.",
+    "source": "CUAD (Audit Rights)"
+  },
+  {
+    "id": "real_cuad_75",
+    "gold_clause_type": "Audit",
+    "text": "Valeant shall bear the out-of-pocket costs and expenses incurred by the Parties in connection with any such inspection or audit, unless the audit shows an undisputed under-reporting or underpayment for that audited period in excess of [***] of the amounts properly determined, in which case, Dova shall reimburse Valeant for its audit fees and reasonable out-of-pocket expenses in connection with said audit, which reimbursement shall be due and payable within [***] of receiving appropriate invoices and other support for such audit-related costs.",
+    "source": "CUAD (Audit Rights)"
+  },
+  {
+    "id": "real_cuad_76",
+    "gold_clause_type": "Audit",
+    "text": "Valeant shall have the right, at its own expense, during normal business hours and upon reasonable prior notice, through certified public accounting firm or other auditor selected by Valeant and reasonably acceptable to Dova and upon execution of a confidentiality agreement reasonably satisfactory to Dova in form and substance, to inspect and audit the applicable records and books maintained by Dova for purposes of verifying Dova's payment obligations within this Agreement, including the applicable records and books of account maintained by Dova, or any Affiliate, as applicable, with respect to Net Sales in order to confirm the accuracy and completeness of such records and books of account and all payments hereunder; provided, however, that (i) such examination shall not take place more often than once per every twelve (12) months during the Term and once during the one (1) year period following the end of the Term, and (ii) such examination shall not cover a period of time that has previously been audited; provided that Valeant shall have the right to conduct additional \"for cause\" audits to the extent necessary to address significant problems relating to Dova's payment obligations hereunder.",
+    "source": "CUAD (Audit Rights)"
+  },
+  {
+    "id": "real_cuad_77",
+    "gold_clause_type": "Audit",
+    "text": "Where necessary, on reasonable request, Dova's audit rights shall include interviewing Sales Representatives and other employees of Valeant.",
+    "source": "CUAD (Audit Rights)"
+  },
+  {
+    "id": "real_cuad_78",
     "gold_clause_type": "Compliance",
-    "text": "Both parties shall at all times comply with all applicable local, state, and central statutes, regulations, directives, and ordinances, including without limitation the Prevention of Corruption Act, 1988, the Foreign Corrupt Practices Act (FCPA), labor and environmental safety standards, and export control regulations.",
-    "contract_type": "Procurement Contract"
+    "text": "Neither the Company\u2019s ownership of the assets, nor, to such Assignor\u2019s knowledge, the operation of the Company\u2019s assets is in violation of any applicable laws, licenses and permits, including any applicable environmental laws, licenses and permits, in any material respect.",
+    "source": "LEDGAR (SEC EDGAR - Compliance With Laws)"
   },
   {
-    "id": "clause_19",
+    "id": "real_cuad_79",
+    "gold_clause_type": "Compliance",
+    "text": "Each Loan Party and each Subsidiary thereof is in compliance with the requirements of all Laws and all orders, writs, injunctions and decrees applicable to it or to its properties, except in such instances in which the failure to comply therewith, either individually or in the aggregate, could not reasonably be expected to have a Material Adverse Effect.",
+    "source": "LEDGAR (SEC EDGAR - Compliance With Laws)"
+  },
+  {
+    "id": "real_cuad_80",
+    "gold_clause_type": "Compliance",
+    "text": "The business and operations of the Company have been conducted in accordance with all applicable laws, rules and regulations of all governmental authorities, except for such violations which would not, individually or in the aggregate, have a material adverse effect on the financial condition or business of the Company.",
+    "source": "LEDGAR (SEC EDGAR - Compliance With Laws)"
+  },
+  {
+    "id": "real_cuad_81",
+    "gold_clause_type": "Compliance",
+    "text": "If you are resident or employed outside the U.S., as a condition of the Option, you agree to repatriate all payments attributable to the shares of Stock acquired under the Plan in accordance with applicable foreign exchange rules and regulations in your country of residence (and country of employment, if different).\u00a0 In addition, you agree to take any and all actions, and consent to any and all actions taken by the Company and its Affiliates, as may be required to allow the Company and its Affiliates to comply with local laws, rules and/or regulations in your country of residence (and country of employment, if different).\u00a0 Finally, you agree to take any and all actions as may be required to comply with your personal obligations under local laws, rules and/or regulations in your country of residence and country of employment, if different).",
+    "source": "LEDGAR (SEC EDGAR - Compliance With Laws)"
+  },
+  {
+    "id": "real_cuad_82",
+    "gold_clause_type": "Compliance",
+    "text": "The Borrower Parties:\u00a0 (1)\u00a0shall comply, in all material respects, with all material Requirements of Law of any Governmental Authority having jurisdiction over it or its business, and (2)\u00a0shall, to the extent that the failure of the same would have a Material Adverse Effect, comply, in all respects, with all Contractual Obligations.\u00a0 The Borrower Parties shall, to the extent that the failure of the same would have a Material Adverse Effect, cause each of their respective Subsidiaries to:\u00a0 (1)\u00a0comply, in all respects, with all Requirements of Law of any Governmental Authority having jurisdiction over it or its business, and (2)\u00a0comply, in all respects, with all Contractual Obligations.",
+    "source": "LEDGAR (SEC EDGAR - Compliance With Laws)"
+  },
+  {
+    "id": "real_cuad_83",
     "gold_clause_type": "Service Levels",
-    "text": "Provider commits that the Cloud Platform will achieve Monthly Uptime of at least 99.9% during each calendar month. In the event of failure to meet this availability threshold, Customer shall be entitled to receive service credits equal to 10% of the monthly subscription fee for each 0.5% drop in availability below 99.9%, up to a maximum credit of 50% of the monthly fee.",
-    "contract_type": "SLA Agreement"
+    "text": "Provider warrants that the Production Cloud Service will achieve Monthly Uptime Percentage of at least 99.9% during each calendar month. In the event of failure to achieve said target, Customer shall be eligible to receive a Service Credit equal to ten percent (10%) of the monthly fee for each 0.5% drop in availability below 99.9%.",
+    "source": "SEC EDGAR Form 10-K Cloud Platform SLA"
   },
   {
-    "id": "clause_20",
+    "id": "real_cuad_84",
+    "gold_clause_type": "Service Levels",
+    "text": "Service Provider shall maintain a Mean Time to Respond (MTTR) of less than thirty (30) minutes for Severity 1 (Critical) incidents on a 24x7x365 basis, providing hourly status updates until full service restoration.",
+    "source": "SEC EDGAR Form 10-Q IT Infrastructure Services Schedule"
+  },
+  {
+    "id": "real_cuad_85",
     "gold_clause_type": "Term",
-    "text": "The term of this Agreement shall commence on the Effective Date and shall continue in full force and effect for an initial period of three (3) calendar years, unless terminated earlier in accordance with the express provisions of Section 12.",
-    "contract_type": "Master Services Agreement"
+    "text": "The term of this  Agreement  shall be ten (10)                            years (the \"Term\")  which shall  commence on the date                            upon which the Company  delivers to  Distributor  the                            last Sample, as defined  hereinafter.",
+    "source": "CUAD (Effective Date)"
   },
   {
-    "id": "clause_21",
+    "id": "real_cuad_86",
+    "gold_clause_type": "Term",
+    "text": "Unless  earlier   terminated   otherwise  provided                   therein,  this  Agreement,  subject to the  commencement  date                   established  in Section 1.3,  shall be effective  immediately.",
+    "source": "CUAD (Effective Date)"
+  },
+  {
+    "id": "real_cuad_87",
+    "gold_clause_type": "Term",
+    "text": "\"Term\" means the earlier of: (a) the end of the two year period from the Effective Date to 31 July 2013; or (b) the last day of the calendar month  within which the Maximum Distribution Commitment is reached.",
+    "source": "CUAD (Expiration Date)"
+  },
+  {
+    "id": "real_cuad_88",
+    "gold_clause_type": "Term",
+    "text": "This Agreement shall commence on the Effective Date and, unless earlier terminated as set out in this Agreement, shall continue  for the Term.",
+    "source": "CUAD (Expiration Date)"
+  },
+  {
+    "id": "real_cuad_89",
+    "gold_clause_type": "Term",
+    "text": "The term of this Agreement for the Hosted Site shall commence upon April 1, 1999 and shall continue for a period of six (6) months, unless earlier terminated in accordance with provisions hereof.",
+    "source": "CUAD (Effective Date)"
+  },
+  {
+    "id": "real_cuad_90",
     "gold_clause_type": "Renewal",
-    "text": "Upon expiration of the Initial Term, this Agreement shall automatically renew for successive one (1) year renewal terms, unless either party delivers written notice of its intention not to renew at least sixty (60) days prior to the expiration of the then-current term.",
-    "contract_type": "Software Subscription Agreement"
+    "text": "If Distributor                            complies with all of the terms of this Agreement, the                            Agreement  shall be  renewable on an annual basis for                            one (1) year terms for up to  another  ten (10) years                            on the same terms and conditions as set forth herein.",
+    "source": "CUAD (Renewal Term)"
   },
   {
-    "id": "clause_22",
+    "id": "real_cuad_91",
+    "gold_clause_type": "Renewal",
+    "text": "This Agreement shall automatically be renewed for one (1) or more one (1) month periods unless either the Customer or i-on gives notice to the other party of its intention not to renew the",
+    "source": "CUAD (Renewal Term)"
+  },
+  {
+    "id": "real_cuad_92",
+    "gold_clause_type": "Renewal",
+    "text": "Agreement, which notice must be given not less than fifteen (15) days before the end of the respective initial or renewal term.",
+    "source": "CUAD (Renewal Term)"
+  },
+  {
+    "id": "real_cuad_93",
+    "gold_clause_type": "Renewal",
+    "text": "Thereafter  the term of this Agreement shall automatically renew for consecutive periods of two (2) years each.",
+    "source": "CUAD (Renewal Term)"
+  },
+  {
+    "id": "real_cuad_94",
+    "gold_clause_type": "Renewal",
+    "text": "After the Initial Term, this Agreement shall continue on a month to month basis until terminated by either party upon thirty (30) days prior written notice to the other setting forth the effective date of such termination.",
+    "source": "CUAD (Renewal Term)"
+  },
+  {
+    "id": "real_cuad_95",
     "gold_clause_type": "Insurance",
-    "text": "Throughout the term of this Agreement and for one year thereafter, Contractor shall maintain at its own expense comprehensive commercial general liability insurance with limits not less than INR 10,000,000 per occurrence, professional indemnity (errors & omissions) insurance of INR 20,000,000, and statutory workers' compensation coverage.",
-    "contract_type": "Construction Services Agreement"
+    "text": "Company will carry a reasonable                   amount of product  liability  insurance  through a  reasonably                   acceptable  products liability insurance company and will name                   the  Distributor  as an additional  insured under that policy.                   Company  will make  reasonable  efforts  to  procure a policy,                   which is non-cancelable, except upon thirty (30) days, advance                   notice to the Distributor.",
+    "source": "CUAD (Insurance)"
+  },
+  {
+    "id": "real_cuad_96",
+    "gold_clause_type": "Insurance",
+    "text": "To be covered by the Seller for 110% invoice value against All Risks and War Risk.",
+    "source": "CUAD (Insurance)"
+  },
+  {
+    "id": "real_cuad_97",
+    "gold_clause_type": "Insurance",
+    "text": "Each Party acknowledges and agrees that during the Term, it shall maintain, through purchase or self- insurance, adequate insurance, including products liability coverage and comprehensive general liability insurance, adequate to cover its obligations under this Agreement and which are consistent with normal business practices of prudent companies similarly situated.",
+    "source": "CUAD (Insurance)"
+  },
+  {
+    "id": "real_cuad_98",
+    "gold_clause_type": "Insurance",
+    "text": "Each Party shall maintain, at its own cost, comprehensive product liability insurance, general commercial liability insurance and business interruption insurance at a level which is reasonable and customary taking into account the nature of the Product but which shall  have combined limits of not less than $[**] per occurrence.",
+    "source": "CUAD (Insurance)"
+  },
+  {
+    "id": "real_cuad_99",
+    "gold_clause_type": "Insurance",
+    "text": "Such insurance shall be with a reputable insurance company and where  reasonably possible (taking into account the availability of such insurance) shall be maintained for not less than [**] ([**]) years following  the expiry or termination of this Agreement.",
+    "source": "CUAD (Insurance)"
   }
 ]

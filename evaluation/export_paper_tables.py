@@ -203,7 +203,7 @@ def update_paper_tex(results: dict, paper_file: Path = PAPER_PATH):
     with open(paper_file, "w", encoding="utf-8") as f:
         f.write(content)
 
-    print(f"✓ Successfully updated {paper_file.name} with live benchmark tables!")
+    print(f"[OK] Successfully updated {paper_file.name} with live benchmark tables!")
 
 
 def main():

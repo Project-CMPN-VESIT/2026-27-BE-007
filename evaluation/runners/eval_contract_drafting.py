@@ -56,7 +56,7 @@ def run_contract_drafting_evaluation(live: bool = False) -> Dict[str, Any]:
     print(f"Clauses Tested:              {len(gold_redlines)}")
     print(f"Statutory Remedy Pass Rate:  {round(pass_rate * 100, 1)}%")
     for r in results:
-        status_symbol = "✓ PASS" if r["remedy_success"] else "✗ FAIL"
+        status_symbol = "PASS" if r["remedy_success"] else "FAIL"
         print(f"  [{status_symbol}] {r['defect_name']}: {r['details']}")
     print("=" * 80)
 

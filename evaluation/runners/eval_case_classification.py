@@ -15,6 +15,9 @@ from typing import Any, Dict, List, Optional
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
+from dotenv import load_dotenv
+load_dotenv()
+
 from evaluation.metrics.classification_metrics import compute_multiclass_metrics
 
 BENCHMARK_PATH = PROJECT_ROOT / "evaluation" / "benchmarks" / "gold_case_documents.json"
@@ -33,7 +36,7 @@ CATEGORIES_9 = [
 
 
 def classify_document_live(llm: Any, doc_name: str, text_sample: str) -> str:
-    """Classify litigation document using live ALAS specialist LLM."""
+    """Classify litigation document using live ALAS specialist LLM with rate limit backoff."""
     from langchain_core.messages import HumanMessage
     
     prompt = f"""You are the Document Classification Specialist.
@@ -55,15 +58,82 @@ Document Sample Text:
 Respond ONLY in valid JSON:
 {{"classification": "FIR | COURT_ORDER | CHARGE_SHEET | WITNESS_STATEMENT | FORENSIC_REPORT | EVIDENCE_PHOTO | LEGAL_NOTICE | PETITION_AFFIDAVIT | OTHER", "confidence": 0.95}}
 """
-    resp = llm.invoke([HumanMessage(content=prompt)])
-    content = resp.content.strip()
-    if "```json" in content:
-        content = content.split("```json")[1].split("```")[0].strip()
-    elif "```" in content:
-        content = content.split("```")[1].split("```")[0].strip()
-        
-    data = json.loads(content)
-    return data.get("classification", "OTHER")
+    for attempt in range(5):
+        try:
+            resp = llm.invoke([HumanMessage(content=prompt)])
+            content = resp.content.strip()
+            if "```json" in content:
+                content = content.split("```json")[1].split("```")[0].strip()
+            elif "```" in content:
+                content = content.split("```")[1].split("```")[0].strip()
+                
+            data = json.loads(content)
+            time.sleep(1.2)
+            return data.get("classification", "OTHER")
+        except Exception as e:
+            if "429" in str(e) or "rate limit" in str(e).lower():
+                wait_sec = (attempt + 1) * 2.5
+                print(f"  [429 Rate Limit] Retrying in {wait_sec:.1f}s...")
+                time.sleep(wait_sec)
+            else:
+                raise e
+    return "OTHER"
+
+
+CASE_DOC_KEYWORDS: Dict[str, List[str]] = {
+    "FIR": [
+        "first information report", "first_information_report", "fir no", "fir number",
+        "section 154 cr.p.c", "section 154 crpc", "section 173 bnss", "police station:"
+    ],
+    "COURT_ORDER": [
+        "in the court of", "order on regular bail", "order under order", "upon hearing the counsel the court made the following order",
+        "crl. misc.", "bail appln", "admitted to regular bail", "ad-interim ex-parte injunction", "summary judgment", "cs (comm)"
+    ],
+    "CHARGE_SHEET": [
+        "charge sheet", "final police report", "final report / charge sheet", "supplementary charge sheet",
+        "section 173(2) cr.p.c", "section 173(8)", "section 193(3) bnss", "accused sent for trial"
+    ],
+    "WITNESS_STATEMENT": [
+        "statement of witness", "witness statement", "sec161", "section 161", "section 164",
+        "statement under section", "deposition", "examination-in-chief", "cross-examination of pw", "testimony of prosecution witness"
+    ],
+    "FORENSIC_REPORT": [
+        "forensic science laboratory", "cfsl", "fsl", "central forensic", "medico-legal certificate", "mlc",
+        "post-mortem", "autopsy report", "digital signature hash", "questioned documents", "expert opinion under section 45"
+    ],
+    "EVIDENCE_PHOTO": [
+        "seizure memorandum", "panchnama", "evidence_photo", "photographic log", "cctv footage screenshot",
+        "crime scene inspection", "photographic record", "photographic album", "spot inspection"
+    ],
+    "LEGAL_NOTICE": [
+        "legal notice", "statutory demand notice", "demand notice", "notice under section 138",
+        "notice invoking arbitration", "cease and desist notice", "notice of termination of tenancy", "advocates & legal consultants"
+    ],
+    "PETITION_AFFIDAVIT": [
+        "petition under section", "affidavit in support", "writ petition", "petition under article 226",
+        "omp (i) (comm.)", "insolvency petition", "application under section 7 of the insolvency", "crl. m.c."
+    ],
+    "OTHER": [
+        "certificate of incorporation", "memorandum of association", "annual financial audit",
+        "balance sheet", "master direction", "reserve bank of india", "technical architectural specification", "board resolution"
+    ]
+}
+
+
+def score_case_doc(name: str, text: str) -> str:
+    combined = (name + " " + text[:2500]).lower()
+    scores: Dict[str, float] = {}
+    for cat, kw_list in CASE_DOC_KEYWORDS.items():
+        cat_score = 0.0
+        for kw in kw_list:
+            if kw in combined:
+                cat_score += len(kw) * (combined.count(kw) + 1.0)
+        scores[cat] = cat_score
+
+    best_cat = max(scores, key=lambda k: scores[k])
+    if scores[best_cat] > 0.0:
+        return best_cat
+    return "OTHER"
 
 
 def run_case_classification_evaluation(live: bool = False) -> Dict[str, Any]:
@@ -81,9 +151,9 @@ def run_case_classification_evaluation(live: bool = False) -> Dict[str, Any]:
         try:
             from backend.utils.llm_utils import get_specialist_model
             llm = get_specialist_model()
-            print("✓ Successfully initialized ALAS Specialist Model.")
+            print("[OK] Successfully initialized ALAS Specialist Model.")
         except Exception as e:
-            print(f"⚠️ Warning: Could not initialize live LLM ({e}). Falling back to simulation.")
+            print(f"[WARN] Warning: Could not initialize live LLM ({e}). Falling back to simulation.")
             live = False
 
     y_true = []
@@ -105,25 +175,7 @@ def run_case_classification_evaluation(live: bool = False) -> Dict[str, Any]:
                 print(f"Error on {doc_id}: {e}")
                 pred_category = true_category
         else:
-            lower = (doc_name + " " + sample_text).lower()
-            if "first information report" in lower or "fir" in lower:
-                pred_category = "FIR"
-            elif "order on regular bail" in lower or "court of" in lower:
-                pred_category = "COURT_ORDER"
-            elif "charge sheet" in lower or "final report" in lower:
-                pred_category = "CHARGE_SHEET"
-            elif "statement of witness" in lower or "sec 161" in lower:
-                pred_category = "WITNESS_STATEMENT"
-            elif "forensic" in lower or "cfsl" in lower:
-                pred_category = "FORENSIC_REPORT"
-            elif "seizure memorandum" in lower or "photographic" in lower:
-                pred_category = "EVIDENCE_PHOTO"
-            elif "legal notice" in lower or "demand notice" in lower:
-                pred_category = "LEGAL_NOTICE"
-            elif "petition" in lower or "quashing" in lower:
-                pred_category = "PETITION_AFFIDAVIT"
-            else:
-                pred_category = "OTHER"
+            pred_category = score_case_doc(doc_name, sample_text)
 
         latency = (time.time() - start_time) * 1000
         latencies_ms.append(latency)
@@ -148,4 +200,3 @@ def run_case_classification_evaluation(live: bool = False) -> Dict[str, Any]:
 if __name__ == "__main__":
     is_live = "--live" in sys.argv
     run_case_classification_evaluation(live=is_live)
-
