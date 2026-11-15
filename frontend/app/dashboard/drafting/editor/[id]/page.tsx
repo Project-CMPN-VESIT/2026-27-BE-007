@@ -22,6 +22,10 @@ import {
   ChevronDown,
   ChevronUp,
   ArrowLeft,
+  PanelLeft,
+  PanelLeftClose,
+  PanelRight,
+  PanelRightClose,
 } from "lucide-react";
 import toast from "react-hot-toast";
 import { apiClient } from "@/services/api";
@@ -34,6 +38,7 @@ import { AISelectionModal } from "@/components/dashboard/AISelectionModal";
 import { DraftingStreamConsole } from "@/components/dashboard/DraftingStreamConsole";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { useSidebar } from "@/components/dashboard/SidebarContext";
 
 function cleanMarkdownForRendering(raw: string): string {
   if (!raw) return "";
@@ -128,6 +133,9 @@ function DraftingEditorInner() {
   const [isAnalyzing, setIsAnalyzing] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
   const [hasUnsavedChanges, setHasUnsavedChanges] = useState(false);
+
+  const { isSidebarOpen, toggleSidebar } = useSidebar();
+  const [showCompliancePanel, setShowCompliancePanel] = useState(true);
 
   // Right sidebar tab: "analysis" (Risk & Edit Suggestions) or "chat" (Ask AI Jurist)
   const [rightPanelTab, setRightPanelTab] = useState<"analysis" | "chat">("analysis");
@@ -428,6 +436,36 @@ function DraftingEditorInner() {
 
         <div className="flex items-center gap-2">
           <Button
+            variant="outline"
+            size="sm"
+            onClick={toggleSidebar}
+            title={isSidebarOpen ? "Collapse Left Sidebar" : "Expand Left Sidebar"}
+            className="text-xs h-8 px-2.5 text-muted-foreground hover:text-foreground"
+          >
+            {isSidebarOpen ? (
+              <PanelLeftClose className="w-3.5 h-3.5 mr-1.5" />
+            ) : (
+              <PanelLeft className="w-3.5 h-3.5 mr-1.5" />
+            )}
+            <span>{isSidebarOpen ? "Hide Sidebar" : "Show Sidebar"}</span>
+          </Button>
+
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={() => setShowCompliancePanel((prev) => !prev)}
+            title={showCompliancePanel ? "Collapse Compliance Panel" : "Show Compliance Panel"}
+            className="text-xs h-8 px-2.5 text-muted-foreground hover:text-foreground"
+          >
+            {showCompliancePanel ? (
+              <PanelRightClose className="w-3.5 h-3.5 mr-1.5" />
+            ) : (
+              <PanelRight className="w-3.5 h-3.5 mr-1.5" />
+            )}
+            <span>{showCompliancePanel ? "Hide Compliance" : "Compliance Panel"}</span>
+          </Button>
+
+          <Button
             variant="ghost"
             size="sm"
             onClick={() => window.print()}
@@ -535,48 +573,61 @@ function DraftingEditorInner() {
         )}
 
         {/* Right Compliance & Suggestions Panel */}
-        <div className="w-80 lg:w-96 border-l border-border bg-muted/20 flex flex-col shrink-0 overflow-hidden no-print">
-          <div className="p-3 border-b border-border bg-card flex items-center justify-between">
-            <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-              Statutory Compliance
-            </span>
-            <Badge variant="outline" className="text-[10px]">
-              ICA 1872
-            </Badge>
+        {showCompliancePanel && (
+          <div className="w-80 lg:w-96 border-l border-border bg-muted/20 flex flex-col shrink-0 overflow-hidden no-print">
+            <div className="p-3 border-b border-border bg-card flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                  Statutory Compliance
+                </span>
+                <Badge variant="outline" className="text-[10px]">
+                  ICA 1872
+                </Badge>
+              </div>
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={() => setShowCompliancePanel(false)}
+                className="h-6 w-6 p-0 text-muted-foreground hover:text-foreground"
+                title="Close Compliance Panel"
+              >
+                <X className="w-3.5 h-3.5" />
+              </Button>
+            </div>
+
+            <div className="flex-1 overflow-y-auto p-4 space-y-4">
+              <div className="p-3.5 rounded-md border border-border bg-card shadow-sm space-y-2">
+                <div className="flex items-center gap-2 text-xs font-semibold text-foreground">
+                  <ShieldAlert className="w-4 h-4 text-emerald-600" />
+                  <span>Section 27 (Non-Compete) Audit</span>
+                </div>
+                <p className="text-[11px] text-muted-foreground leading-relaxed">
+                  Indian Contract Act Section 27 renders post-employment non-competes void. Ensure restrictive covenants are strictly limited to non-solicitation of clients during term.
+                </p>
+              </div>
+
+              <div className="p-3.5 rounded-md border border-border bg-card shadow-sm space-y-2">
+                <div className="flex items-center gap-2 text-xs font-semibold text-foreground">
+                  <ShieldAlert className="w-4 h-4 text-emerald-600" />
+                  <span>Section 74 (Liquidated Damages)</span>
+                </div>
+                <p className="text-[11px] text-muted-foreground leading-relaxed">
+                  Penalties disguised as liquidated damages are unenforceable. Clause must represent a genuine pre-estimate of loss.
+                </p>
+              </div>
+
+              <div className="p-3.5 rounded-md border border-border bg-card shadow-sm space-y-2">
+                <div className="flex items-center gap-2 text-xs font-semibold text-foreground">
+                  <ShieldAlert className="w-4 h-4 text-emerald-600" />
+                  <span>Section 28 (Arbitration Seat)</span>
+                </div>
+                <p className="text-[11px] text-muted-foreground leading-relaxed">
+                  Agreements in restraint of legal proceedings are void unless saved by the statutory arbitration exception.
+                </p>
+              </div>
+            </div>
           </div>
-
-          <div className="flex-1 overflow-y-auto p-4 space-y-4">
-            <div className="p-3.5 rounded-md border border-border bg-card shadow-sm space-y-2">
-              <div className="flex items-center gap-2 text-xs font-semibold text-foreground">
-                <ShieldAlert className="w-4 h-4 text-emerald-600" />
-                <span>Section 27 (Non-Compete) Audit</span>
-              </div>
-              <p className="text-[11px] text-muted-foreground leading-relaxed">
-                Indian Contract Act Section 27 renders post-employment non-competes void. Ensure restrictive covenants are strictly limited to non-solicitation of clients during term.
-              </p>
-            </div>
-
-            <div className="p-3.5 rounded-md border border-border bg-card shadow-sm space-y-2">
-              <div className="flex items-center gap-2 text-xs font-semibold text-foreground">
-                <ShieldAlert className="w-4 h-4 text-emerald-600" />
-                <span>Section 74 (Liquidated Damages)</span>
-              </div>
-              <p className="text-[11px] text-muted-foreground leading-relaxed">
-                Penalties disguised as liquidated damages are unenforceable. Clause must represent a genuine pre-estimate of loss.
-              </p>
-            </div>
-
-            <div className="p-3.5 rounded-md border border-border bg-card shadow-sm space-y-2">
-              <div className="flex items-center gap-2 text-xs font-semibold text-foreground">
-                <ShieldAlert className="w-4 h-4 text-emerald-600" />
-                <span>Section 28 (Arbitration Seat)</span>
-              </div>
-              <p className="text-[11px] text-muted-foreground leading-relaxed">
-                Agreements in restraint of legal proceedings are void unless saved by the statutory arbitration exception.
-              </p>
-            </div>
-          </div>
-        </div>
+        )}
       </div>
 
       {/* AI Selection Modal */}
